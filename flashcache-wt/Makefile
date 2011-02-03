@@ -1,3 +1,5 @@
+KERNEL_TREE ?= /lib/modules/$(shell uname -r)/build
+
 all:
 	$(MAKE) -C src KERNEL_TREE=$(KERNEL_TREE) PWD=$(PWD)/src
 
